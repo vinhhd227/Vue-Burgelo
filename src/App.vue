@@ -1,30 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <header>
+    <top-header></top-header>
+    <navbar-component></navbar-component>
+  </header>
+  <router-view />
+  <contact-component></contact-component>
+  <map-component></map-component>
+  <footer-component></footer-component>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import TopHeader from '@/components/TopHeader.vue';
+import NavbarComponent from '@/components/NavbarComponent.vue';
+import ContactComponent from '@/components/ContactComponent.vue';
+import MapComponent from '@/components/MapComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
+
+export default {
+  name: 'App',
+  components: { TopHeader, NavbarComponent, ContactComponent, MapComponent, FooterComponent},
 }
+</script>
+<style lang="scss" scoped>
+@import '@/styles/global';
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

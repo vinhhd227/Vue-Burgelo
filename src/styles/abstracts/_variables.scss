@@ -1,0 +1,30 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$dark: #333333;
+$primary: #ffc139;
+
+// Fonts
+$font-family-base: 'Hiragino Sans', 'Noto Sans Japanese', 'Yu Gothic', 'Meiryo', 'Hiragino Kaku Gothic Pro', '游ゴシック', 'メイリオ', 'MS ゴシック', 'sans-serif';
+$font-family-heading: 'Playfair Display', serif;
+
+// Breakpoints
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px
+);
+
+$landscape-phone-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
+$larger-desktop-width: 1400px;
